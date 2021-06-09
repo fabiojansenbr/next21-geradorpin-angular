@@ -36,10 +36,26 @@ select#fixed {
   -webkit-appearance: none;
 }
 
-button {
+.enviarButton {
   width: 250px;
   height: 2.5rem;
-  background: #e1e1e1;
+
   color: #000;
   border: #2c343c;
+}
+
+.salvarButton {
+  width: 250px;
+  height: 2.5rem;
+  background: #28818a;
+  color: #000;
+  border: #2c343c;
+  margin-top: 30px;
+}
+
+.botoes {
+  background: #e1e1e1;
+  height: 2.5rem;
+  width: 10px;
+  margin-right: 10px;
 }

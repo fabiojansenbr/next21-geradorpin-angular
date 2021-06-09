@@ -12,6 +12,9 @@ export class ContentImageComponent implements OnInit {
 
   imageUrl = 'pin_bronze'
   name = '';
+  avatarUrl: any;
+  topPosition = 167;
+  leftPosition = 237;
 
   ngOnInit(): void {
     this._changeImageService.imageUrl$.subscribe(
@@ -24,6 +27,25 @@ export class ContentImageComponent implements OnInit {
     this._changeImageService.name$.subscribe(
       newName => {
         this.name = newName;
+      }
+    );
+
+    this._changeImageService.avatarUrl$.subscribe(
+      avatar => {
+        this.avatarUrl = avatar;
+
+      }
+    );
+
+    this._changeImageService.vPosition$.subscribe(
+      value => {
+        this.leftPosition += value;
+      }
+    );
+
+    this._changeImageService.hPosition$.subscribe(
+      value => {
+        this.topPosition += value;
       }
     );
   }

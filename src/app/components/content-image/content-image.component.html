@@ -5,3 +5,7 @@
 <div class="nameContent">
   <h3 class="example-box" cdkDragBoundary=".content" cdkDrag>{{ name }}</h3>
 </div>
+
+<div class="imageBg" [ngStyle]="{'left.px': leftPosition, 'top.px': topPosition}">
+  <img [src]="avatarUrl" height="190" width="190" *ngIf="avatarUrl">
+</div>

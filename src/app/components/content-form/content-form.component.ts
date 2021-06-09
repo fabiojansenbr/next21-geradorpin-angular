@@ -24,4 +24,39 @@ export class ContentFormComponent implements OnInit {
     this._changeImageService.changeName(event.target.value);
   }
 
+  changeVPosition(value: any) {
+    this._changeImageService.changeVPosition(value);
+    console.log(value);
+  }
+
+  changeHPosition(value: any) {
+    this._changeImageService.changeHPosition(value);
+    console.log(value);
+  }
+
+  public imagePath: any;
+  imgURL: any;
+  public message: string | undefined;
+
+  preview(files: any) {
+    if (files.length === 0)
+      return;
+
+    var mimeType = files[0].type;
+    if (mimeType.match(/image\/*/) == null) {
+      this.message = "Only images are supported.";
+      return;
+    }
+
+    var reader = new FileReader();
+    this.imagePath = files;
+    reader.readAsDataURL(files[0]);
+    reader.onload = (_event) => {
+      this.imgURL = reader.result;
+
+      this._changeImageService.changeAvatarUrl(reader.result);
+      console.log(reader.result);
+    }
+  }
+
 }

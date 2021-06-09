@@ -5,6 +5,12 @@
   width: 450px;
 }
 
+.imageBg {
+  position: relative;
+
+  z-index: -1;
+}
+
 .nameContent {
   position: relative;
   top: 360px;
