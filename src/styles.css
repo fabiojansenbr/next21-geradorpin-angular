@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1120px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}

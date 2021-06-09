@@ -1,0 +1,45 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  width: 450px;
+}
+
+input {
+  width: 250px;
+  height: 2.5rem;
+  background: #e1e1e1;
+  color: #000;
+  border: #2c343c;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+label {
+  padding-bottom: 1rem;
+  font-family: "Poppins";
+}
+
+select {
+  width: 250px;
+  height: 2.5rem;
+  background: #e1e1e1;
+  color: #000;
+  border: #2c343c;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+select#fixed {
+  -webkit-appearance: none;
+}
+
+button {
+  width: 250px;
+  height: 2.5rem;
+  background: #e1e1e1;
+  color: #000;
+  border: #2c343c;
+}

@@ -1,0 +1,18 @@
+<form>
+  <label>Escolha a graduação:</label>
+  <select #graduacaoSelect (change)='onOptionsSelected(graduacaoSelect.value)'>
+    <option value="pin_bronze">Bronze</option>
+    <option value="pin_prata">Prata</option>
+    <option value="pin_ouro">Ouro</option>
+    <option value="diamante">Diamante</option>
+    <option value="diamante_elite">Diamante Elite</option>
+    <option value="royal_diamond">Diamante Royal</option>
+    <option value="blue_diamond">Blue Diamond</option>
+    <option value="red_diamond">Red Diamond</option>
+    <option value="black_diamond">Black Diamond</option>
+  </select>
+
+  <label>Nome:</label>
+  <input type="text" id="lname" name="lastname" placeholder="" class="inputNome" />
+
+  <button type="submit">Salvar Imagem</button>
