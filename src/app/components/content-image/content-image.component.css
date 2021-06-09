@@ -1,0 +1,14 @@
+.content {
+  position: absolute;
+}
+
+.nameContent {
+  position: relative;
+  top: 360px;
+  left: 265px;
+}
+
+.nameContent h3 {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}

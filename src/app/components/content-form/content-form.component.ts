@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChangeImageService } from 'src/app/services/change-image.service';
 
 @Component({
   selector: 'app-content-form',
@@ -7,13 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _changeImageService: ChangeImageService) { }
+
+  name = '';
 
   ngOnInit(): void {
   }
 
-  onOptionsSelected(value: string) {
-    console.log(value);
+  changeImageSelect(value: string) {
+    this._changeImageService.changeUrl(value);
+  }
+
+  nameChanged(event: any) {
+    console.log(event.target.value);
+    this._changeImageService.changeName(event.target.value);
   }
 
 }

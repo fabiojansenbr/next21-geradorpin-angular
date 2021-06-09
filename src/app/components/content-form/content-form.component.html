@@ -1,6 +1,6 @@
 <form>
   <label>Escolha a graduação:</label>
-  <select #graduacaoSelect (change)='onOptionsSelected(graduacaoSelect.value)'>
+  <select #graduacaoSelect (change)='changeImageSelect(graduacaoSelect.value)'>
     <option value="pin_bronze">Bronze</option>
     <option value="pin_prata">Prata</option>
     <option value="pin_ouro">Ouro</option>
@@ -13,6 +13,6 @@
   </select>
 
   <label>Nome:</label>
-  <input type="text" id="lname" name="lastname" placeholder="" class="inputNome" />
+  <input type="text" class="inputNome" (keyup)="nameChanged($event)" />
 
   <button type="submit">Salvar Imagem</button>
