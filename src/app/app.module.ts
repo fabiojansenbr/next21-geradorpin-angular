@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { TitleComponent } from './components/title/title.component';
 import { ContentFormComponent } from './components/content-form/content-form.component';
 import { ContentImageComponent } from './components/content-image/content-image.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ContentImageComponent } from './components/content-image/content-image.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
