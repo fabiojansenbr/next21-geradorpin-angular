@@ -15,6 +15,7 @@ export class ContentImageComponent implements OnInit {
   avatarUrl: any;
   topPosition = 167;
   leftPosition = 237;
+  imageSize = 190;
 
   ngOnInit(): void {
     this._changeImageService.imageUrl$.subscribe(
@@ -46,6 +47,18 @@ export class ContentImageComponent implements OnInit {
     this._changeImageService.hPosition$.subscribe(
       value => {
         this.topPosition += value;
+      }
+    );
+
+    this._changeImageService.wImage$.subscribe(
+      value => {
+        this.imageSize += value;
+      }
+    );
+
+    this._changeImageService.hImage$.subscribe(
+      value => {
+        this.imageSize -= (-value);
       }
     );
   }

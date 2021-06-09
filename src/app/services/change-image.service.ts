@@ -21,6 +21,12 @@ export class ChangeImageService {
   private _hPositionSource = new Subject<any>();
   hPosition$ = this._hPositionSource.asObservable();
 
+  private _wImageSource = new Subject<any>();
+  wImage$ = this._wImageSource.asObservable();
+
+  private _hImageSource = new Subject<any>();
+  hImage$ = this._hImageSource.asObservable();
+
 
   constructor() { }
 
@@ -44,6 +50,14 @@ export class ChangeImageService {
   changeHPosition(value: any) {
     this._hPositionSource.next(value);
     console.log('andou', value)
+  }
+
+  changeWImage(value: any) {
+    this._wImageSource.next(value);
+  }
+
+  changeHImage(value: any) {
+    this._hImageSource.next(value);
   }
 
 }

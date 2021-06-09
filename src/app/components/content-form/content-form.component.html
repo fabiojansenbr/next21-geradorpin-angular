@@ -20,6 +20,17 @@
   <input #file type="file" accept='image/*' (change)="preview(file.files)" class="enviarButton"
     (change)="preview(file.files)" />
 
+  <label>Redimensionar imagem:</label>
+  <div class="controlButtons">
+    <button mat-button type="button" class="botoes" (click)='changeHImage(-5)'>
+      <mat-icon>remove</mat-icon>
+    </button>
+    <button mat-button type="button" class="botoes" (click)='changeWImage(+5)'>
+      <mat-icon>add</mat-icon>
+    </button>
+
+  </div>
+  <br />
   <label>Mover imagem:</label>
   <div class="controlButtons">
     <button mat-button type="button" class="botoes" (click)='changeVPosition(-5)'>

@@ -34,6 +34,14 @@ export class ContentFormComponent implements OnInit {
     console.log(value);
   }
 
+  changeWImage(value: any) {
+    this._changeImageService.changeWImage(value);
+  }
+
+  changeHImage(value: any) {
+    this._changeImageService.changeHImage(value);
+  }
+
   public imagePath: any;
   imgURL: any;
   public message: string | undefined;
