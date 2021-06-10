@@ -1,11 +1,24 @@
-<div class="content">
-  <img src="./assets/images/{{ imageUrl }}.png" alt="" height="450px">
+<div class="imageDownload" id="downloadImage" #screen>
+  <div class="content">
+    <img src="./assets/images/{{ imageUrl }}.png" alt="" height="450px">
+
+
+
+
+  </div>
+
+  <div class="nameContent">
+    <h3 class="example-box" cdkDragBoundary=".content" cdkDrag>{{ name }}</h3>
+  </div>
+
+  <div class="imageBg" [ngStyle]="{'left.px': leftPosition, 'top.px': topPosition}" #screen>
+    <img [src]="avatarUrl" [ngStyle]="{'width.px': imageSize, 'height.px': imageSize}" *ngIf="avatarUrl">
+  </div>
+  <div id="download">
+    <img #canvas>
+    <a #downloadLink></a>
+  </div>
+
 </div>
 
-<div class="nameContent">
-  <h3 class="example-box" cdkDragBoundary=".content" cdkDrag>{{ name }}</h3>
-</div>
-
-<div class="imageBg" [ngStyle]="{'left.px': leftPosition, 'top.px': topPosition}">
-  <img [src]="avatarUrl" [ngStyle]="{'width.px': imageSize, 'height.px': imageSize}" *ngIf="avatarUrl">
-</div>
+<button (click)="captureScreen()" class="salvarButton">Salvar Imagem</button>

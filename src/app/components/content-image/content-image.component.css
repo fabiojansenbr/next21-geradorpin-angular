@@ -1,6 +1,6 @@
 .content {
   position: absolute;
-  border: dotted #ccc 2px;
+
   height: 450px;
   width: 450px;
 }
@@ -28,4 +28,22 @@
   height: 100px;
   max-width: 100%;
   border: dotted #ccc 2px;
+}
+
+#download {
+  display: none;
+}
+
+.imageDownload {
+  height: 450px;
+  width: 450px;
+}
+
+.salvarButton {
+  width: 250px;
+  height: 2.5rem;
+  background: #28818a;
+  color: #000;
+  border: #2c343c;
+  margin-top: 30px;
 }

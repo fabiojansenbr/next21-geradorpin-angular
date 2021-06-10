@@ -44,15 +44,6 @@ select#fixed {
   border: #2c343c;
 }
 
-.salvarButton {
-  width: 250px;
-  height: 2.5rem;
-  background: #28818a;
-  color: #000;
-  border: #2c343c;
-  margin-top: 30px;
-}
-
 .botoes {
   background: #e1e1e1;
   height: 2.5rem;

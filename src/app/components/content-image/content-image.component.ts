@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { ChangeImageService } from 'src/app/services/change-image.service';
+import html2canvas from 'html2canvas';
 
 @Component({
   selector: 'app-content-image',
@@ -61,6 +62,22 @@ export class ContentImageComponent implements OnInit {
         this.imageSize -= (-value);
       }
     );
+  }
+
+  // @ViewChild('screen')
+  // screen!: ElementRef;
+  // @ViewChild('canvas')
+  // canvas!: ElementRef;
+  @ViewChild('downloadLink')
+  downloadLink!: ElementRef;
+
+  h2c: any = html2canvas;
+  captureScreen() {
+    this.h2c(document.querySelector("#downloadImage")).then((canvas: any) => {
+      this.downloadLink.nativeElement.href = canvas.toDataURL('image/png');
+      this.downloadLink.nativeElement.download = `${this.imageUrl}.png`;
+      this.downloadLink.nativeElement.click();
+    });
   }
 
 }
