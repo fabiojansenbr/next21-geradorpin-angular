@@ -1,8 +1,10 @@
-<div class="imageDownload" id="downloadImage" #screen>
+<div class="imageDownload" id="downloadImage">
   <div class="content">
-    <img src="./assets/images/{{ imageUrl }}.png" alt="" height="450px">
+    <img src="./assets/images/{{ imageUrl }}.png" alt="">
 
 
+
+    <button (click)="captureScreen()" class="salvarButton">Salvar Imagem</button>
 
 
   </div>
@@ -19,6 +21,5 @@
     <a #downloadLink></a>
   </div>
 
-</div>
 
-<button (click)="captureScreen()" class="salvarButton">Salvar Imagem</button>
+</div>
