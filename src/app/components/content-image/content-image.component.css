@@ -1,4 +1,43 @@
+.container {
+  height: 420px;
+  width: 420px;
+}
+
+.salvarButton {
+  width: 250px;
+  height: 2.5rem;
+  background: #28818a;
+  color: #000;
+  border: #2c343c;
+  margin-top: 30px;
+}
+
+.downloadImage {
+  height: 420px;
+  width: 420px;
+}
+
 .content {
+  position: absolute;
+  height: 420px;
+  width: 420px;
+}
+
+.nameContent {
+  position: relative;
+  color: #fff;
+  top: 332px;
+  left: 220px;
+}
+
+.nameContent h3 {
+  font-family: "Poppins", sans-serif;
+  color: #ff9900;
+  cursor: move;
+  font-size: 20px;
+}
+
+/* .content {
   position: absolute;
 
   height: 450px;
@@ -52,4 +91,4 @@
   color: #000;
   border: #2c343c;
   margin-top: 30px;
-}
+} */

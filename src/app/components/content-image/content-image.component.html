@@ -1,4 +1,22 @@
-<div class="imageDownload" id="downloadImage">
+<div id="downloadImage" class="downloadImage" #images>
+  <img src="./assets/images/{{ imageUrl }}.png" alt="" height="420px" width="420px">
+</div>
+<button (click)="captureScreen()" class="salvarButton">Salvar Imagem</button>
+
+
+<div class="nameContent">
+  <h3 class="example-box" cdkDragBoundary=".content" cdkDrag>{{ name }}</h3>
+</div>
+
+
+
+
+<div id="download">
+  <img #canvas>
+  <a #downloadLink></a>
+</div>
+
+<!-- <div class="imageDownload" id="downloadImage">
   <div class="content">
     <img src="./assets/images/{{ imageUrl }}.png" alt="">
 
@@ -22,4 +40,4 @@
   </div>
 
 
-</div>
+</div> -->

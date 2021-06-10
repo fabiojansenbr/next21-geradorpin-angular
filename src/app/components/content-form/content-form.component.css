@@ -1,3 +1,7 @@
+.container {
+  padding: 0;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -17,8 +21,8 @@ input {
 }
 
 label {
-  padding-bottom: 1rem;
   font-family: "Poppins";
+  padding-top: 1rem;
 }
 
 select {
