@@ -17,8 +17,8 @@ export class ContentImageComponent implements OnInit {
   imageUrl = 'pin_bronze'
   name = '';
   avatarUrl: any;
-  topPosition = 167;
-  leftPosition = 237;
+  topPosition = 160;
+  leftPosition = 230;
   imageSize = 190;
 
 
@@ -80,8 +80,10 @@ export class ContentImageComponent implements OnInit {
 
   h2c: any = html2canvas;
   captureScreen() {
+    window.scrollTo(500, 0);
 
     const viewport: any = this.meta.getTag('name=viewport')?.getAttribute('content');
+    const viewportOriginal: any = this.meta.getTag('name=viewport')?.getAttribute('content');
 
     console.log(viewport);
 
@@ -89,6 +91,7 @@ export class ContentImageComponent implements OnInit {
     this.meta.addTag({ name: 'viewport', content: 'width=1000' })
 
     this.h2c(document.querySelector("#downloadImage")).then((canvas: any) => {
+
 
       this.downloadLink.nativeElement.href = canvas.toDataURL('image/png');
       this.downloadLink.nativeElement.download = `${this.imageUrl}.png`;

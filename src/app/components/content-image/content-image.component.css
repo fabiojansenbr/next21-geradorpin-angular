@@ -1,4 +1,45 @@
-.container {
+/* V3 */
+
+.bannerImage {
+  position: absolute;
+  height: 420px;
+  width: 420px;
+}
+
+.nameContent {
+  position: relative;
+  color: #000;
+  bottom: 85px;
+  left: 240px;
+  width: 200px;
+  height: 33px;
+}
+
+.nameContent h3 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  cursor: move;
+  font-size: 20px;
+}
+
+.salvarButton {
+  width: 250px;
+  height: 2.5rem;
+  background: #28818a;
+  color: #000;
+  border: #2c343c;
+}
+
+.imageBg {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  z-index: -1;
+}
+
+/* V2 */
+
+/* .container {
   height: 420px;
   width: 420px;
 }
@@ -10,11 +51,6 @@
   color: #000;
   border: #2c343c;
   margin-top: 30px;
-}
-
-.downloadImage {
-  height: 420px;
-  width: 420px;
 }
 
 .content {
@@ -36,6 +72,13 @@
   cursor: move;
   font-size: 20px;
 }
+
+.bannerImage {
+  height: 420px;
+  width: 420px;
+} */
+
+/* V1 */
 
 /* .content {
   position: absolute;
