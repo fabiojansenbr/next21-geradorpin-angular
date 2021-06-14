@@ -37,6 +37,12 @@
   z-index: -1;
 }
 
+@media only screen and (max-width: 600px) {
+  .salvarButton {
+    margin-bottom: 150px;
+  }
+}
+
 /* V2 */
 
 /* .container {
