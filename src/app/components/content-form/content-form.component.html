@@ -17,9 +17,9 @@
     <input type="text" class="inputNome" (keyup)="nameChanged($event)" />
     <span>*Para mover o nome, clique e arraste para a posição desejada.</span>
     <br />
-    <label>Enviar imagem:</label>
+
     <input #file type="file" accept='image/*' (change)="preview(file.files)" class="enviarButton"
-      (change)="preview(file.files)" />
+      (change)="preview(file.files)" id="uploadButton" />
 
     <label>Redimensionar imagem:</label>
     <div class="controlButtons">
@@ -31,8 +31,8 @@
       </button>
 
     </div>
-    <br />
-    <label>Mover imagem:</label>
+
+    <label class="moverLabel">Mover imagem:</label>
     <div class="controlButtons">
       <button mat-button type="button" class="botoes" (click)='changeVPosition(-5)'>
         <mat-icon>keyboard_arrow_left</mat-icon>
@@ -42,8 +42,8 @@
       </button>
 
     </div>
-    <br />
-    <div class="controlButtons">
+
+    <div class="controlButtons2">
       <button mat-button type="button" class="botoes" (click)='changeHPosition(-5)'>
         <mat-icon>keyboard_arrow_up</mat-icon>
       </button>
@@ -54,4 +54,14 @@
 
     <br />
   </form>
+</div>
+
+
+<div class="fab-container" #file (change)="preview(file.files) ">
+  <div class="fab fab-icon-holder" onclick="document.getElementById('uploadButton').click()">
+    <i class="fas fa-question">
+      <mat-icon #file (change)="preview(file.files)">
+        add_a_photo</mat-icon>
+    </i>
+  </div>
 </div>
