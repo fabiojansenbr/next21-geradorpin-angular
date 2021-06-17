@@ -26,6 +26,16 @@ export class ContentImageComponent implements OnInit {
     this._changeImageService.imageUrl$.subscribe(
       url => {
         console.log(url);
+
+        if (url == 'black_diamond') {
+          this.imageUrl = url;
+          this.leftPosition = 110;
+          this.topPosition = 75;
+        } else {
+          this.topPosition = 160;
+          this.leftPosition = 230;
+        }
+
         this.imageUrl = url;
       }
     );
