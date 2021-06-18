@@ -55,9 +55,21 @@ select#fixed {
   margin-right: 10px;
 }
 
+.controlButtons {
+  margin-top: 10px;
+}
+
 .controlButtons2 {
   margin-top: 10px;
+}
+
+.controlButtons3 {
+  margin-top: 10px;
   margin-bottom: 50px;
+}
+
+.noDisplay {
+  visibility: hidden;
 }
 
 #uploadButton {

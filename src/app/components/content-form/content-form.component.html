@@ -34,21 +34,37 @@
 
     <label class="moverLabel">Mover imagem:</label>
     <div class="controlButtons">
+      <button mat-button type="button" class="botoes noDisplay" (click)='changeVPosition(-5)'>
+        <mat-icon>keyboard_arrow_left</mat-icon>
+      </button>
+      <button mat-button type="button" class="botoes" (click)='changeHPosition(-5)'>
+        <mat-icon>keyboard_arrow_up</mat-icon>
+      </button>
+      <button mat-button type="button" class="botoes noDisplay">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+    </div>
+
+    <div class="controlButtons2">
       <button mat-button type="button" class="botoes" (click)='changeVPosition(-5)'>
         <mat-icon>keyboard_arrow_left</mat-icon>
+      </button>
+      <button mat-button type="button" class="botoes noDisplay" (click)='changeHPosition(+5)'>
+        <mat-icon>keyboard_arrow_down</mat-icon>
       </button>
       <button mat-button type="button" class="botoes" (click)='changeVPosition(+5)'>
         <mat-icon>keyboard_arrow_right</mat-icon>
       </button>
-
     </div>
-
-    <div class="controlButtons2">
-      <button mat-button type="button" class="botoes" (click)='changeHPosition(-5)'>
+    <div class="controlButtons3">
+      <button mat-button type="button" class="botoes noDisplay" (click)='changeHPosition(-5)'>
         <mat-icon>keyboard_arrow_up</mat-icon>
       </button>
       <button mat-button type="button" class="botoes" (click)='changeHPosition(+5)'>
         <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+      <button mat-button type="button" class="botoes noDisplay" (click)='changeVPosition(+5)'>
+        <mat-icon>keyboard_arrow_right</mat-icon>
       </button>
     </div>
 
