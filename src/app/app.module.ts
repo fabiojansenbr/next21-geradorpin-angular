@@ -12,6 +12,10 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { VipComponent } from './components/vip/vip.component';
+import { GraduacoesComponent } from './components/graduacoes/graduacoes.component';
+import { ContentFormVipComponent } from './components/content-form-vip/content-form-vip.component';
+import { ContentImageVipComponent } from './components/content-image-vip/content-image-vip.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     TitleComponent,
     ContentFormComponent,
-    ContentImageComponent
+    ContentImageComponent,
+    VipComponent,
+    GraduacoesComponent,
+    ContentFormVipComponent,
+    ContentImageVipComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,74 @@
+<div class="container">
+    <form>
+        <label>Escolha a graduação:</label>
+        <select #graduacaoSelect (change)='changeImageSelect(graduacaoSelect.value)'>
+      <option value="vip400">Vip 400</option>
+    </select>
+
+        <label>Nome:</label>
+        <input type="text" class="inputNome" (keyup)="nameChanged($event)" />
+        <span>*Para mover o nome, clique e arraste para a posição desejada.</span>
+        <br />
+
+        <input #file type="file" accept='image/*' (change)="preview(file.files)" class="enviarButton" (change)="preview(file.files)" id="uploadButton" />
+
+        <label>Redimensionar imagem:</label>
+        <div class="controlButtons">
+            <button mat-button type="button" class="botoes" (click)='changeHImage(-5)'>
+        <mat-icon>remove</mat-icon>
+      </button>
+            <button mat-button type="button" class="botoes" (click)='changeWImage(+5)'>
+        <mat-icon>add</mat-icon>
+      </button>
+
+        </div>
+
+        <label class="moverLabel">Mover imagem:</label>
+        <div class="controlButtons">
+            <button mat-button type="button" class="botoes noDisplay" (click)='changeVPosition(-5)'>
+        <mat-icon>keyboard_arrow_left</mat-icon>
+      </button>
+            <button mat-button type="button" class="botoes" (click)='changeHPosition(-5)'>
+        <mat-icon>keyboard_arrow_up</mat-icon>
+      </button>
+            <button mat-button type="button" class="botoes noDisplay">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+        </div>
+
+        <div class="controlButtons2">
+            <button mat-button type="button" class="botoes" (click)='changeVPosition(-5)'>
+        <mat-icon>keyboard_arrow_left</mat-icon>
+      </button>
+            <button mat-button type="button" class="botoes noDisplay" (click)='changeHPosition(+5)'>
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+            <button mat-button type="button" class="botoes" (click)='changeVPosition(+5)'>
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+        </div>
+        <div class="controlButtons3">
+            <button mat-button type="button" class="botoes noDisplay" (click)='changeHPosition(-5)'>
+        <mat-icon>keyboard_arrow_up</mat-icon>
+      </button>
+            <button mat-button type="button" class="botoes" (click)='changeHPosition(+5)'>
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+            <button mat-button type="button" class="botoes noDisplay" (click)='changeVPosition(+5)'>
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+        </div>
+
+        <br />
+    </form>
+</div>
+
+
+<div class="fab-container" #file (change)="preview(file.files) ">
+    <div class="fab fab-icon-holder" onclick="document.getElementById('uploadButton').click()">
+        <i class="fas fa-question">
+      <mat-icon #file (change)="preview(file.files)">
+        add_a_photo</mat-icon>
+    </i>
+    </div>
+</div>

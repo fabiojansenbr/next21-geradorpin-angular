@@ -1,0 +1,155 @@
+/* V3 */
+
+.bannerImage {
+    position: absolute;
+    height: 420px;
+    width: 420px;
+}
+
+.nameContent {
+    position: relative;
+    color: #000;
+    bottom: 85px;
+    left: 50px;
+    width: 200px;
+    height: 33px;
+}
+
+.nameContent h3 {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    cursor: move;
+    font-size: 20px;
+}
+
+.salvarButton {
+    width: 250px;
+    height: 2.5rem;
+    background: #5A3D98;
+    margin-bottom: 50px;
+    color: #000;
+    border: #2c343c;
+}
+
+.photoAdd {
+    background: #5A3D98;
+    position: absolute;
+    top: 100vh;
+    right: 0vw;
+}
+
+.imageBg {
+    position: absolute;
+    height: 260px;
+    width: 260px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    .salvarButton {
+        margin-bottom: 150px;
+    }
+}
+
+
+/* V2 */
+
+
+/* .container {
+height: 420px;
+width: 420px;
+}
+
+.salvarButton {
+width: 250px;
+height: 2.5rem;
+background: #28818a;
+color: #000;
+border: #2c343c;
+margin-top: 30px;
+}
+
+.content {
+position: absolute;
+height: 420px;
+width: 420px;
+}
+
+.nameContent {
+position: relative;
+color: #fff;
+top: 332px;
+left: 220px;
+}
+
+.nameContent h3 {
+font-family: "Poppins", sans-serif;
+color: #ff9900;
+cursor: move;
+font-size: 20px;
+}
+
+.bannerImage {
+height: 420px;
+width: 420px;
+} */
+
+
+/* V1 */
+
+
+/* .content {
+position: absolute;
+
+height: 450px;
+width: 450px;
+}
+
+.imageBg {
+position: relative;
+height: 450px;
+width: 450px;
+z-index: -1;
+}
+
+.nameContent {
+position: relative;
+top: 360px;
+left: 265px;
+}
+
+.nameContent h3 {
+font-family: "Poppins", sans-serif;
+color: #ffffff;
+cursor: move;
+}
+
+.example-boundary {
+width: 100px;
+height: 100px;
+max-width: 100%;
+border: dotted #ccc 2px;
+}
+
+#download {
+display: none;
+}
+
+#imageDownload {
+height: 450px;
+width: 450px;
+}
+
+.imageDownload {
+height: 450px;
+width: 450px;
+}
+
+.salvarButton {
+width: 250px;
+height: 2.5rem;
+background: #28818a;
+color: #000;
+border: #2c343c;
+margin-top: 30px;
+} */
