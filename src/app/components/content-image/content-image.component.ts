@@ -14,11 +14,11 @@ export class ContentImageComponent implements OnInit {
 
   }
 
-  imageUrl = 'pin_bronze'
+  imageUrl = 'perola'
   name = '';
   avatarUrl: any;
-  topPosition = 160;
-  leftPosition = 230;
+  topPosition = 150;
+  leftPosition = 155;
   imageSize = 190;
 
 
@@ -26,16 +26,6 @@ export class ContentImageComponent implements OnInit {
     this._changeImageService.imageUrl$.subscribe(
       url => {
         console.log(url);
-
-        if (url == 'black_diamond') {
-          this.imageUrl = url;
-          this.leftPosition = 110;
-          this.topPosition = 75;
-        } else {
-          this.topPosition = 160;
-          this.leftPosition = 230;
-        }
-
         this.imageUrl = url;
       }
     );

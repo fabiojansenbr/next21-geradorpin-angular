@@ -1,83 +1,84 @@
 <div class="container">
-  <form>
-    <label>Escolha a graduação:</label>
-    <select #graduacaoSelect (change)='changeImageSelect(graduacaoSelect.value)'>
-      <option value="pin_bronze">Bronze</option>
-      <option value="pin_prata">Prata</option>
-      <option value="pin_ouro">Ouro</option>
+    <form>
+        <label>Escolha a graduação:</label>
+        <select #graduacaoSelect (change)='changeImageSelect(graduacaoSelect.value)'>
+      <option value="perola">Pérola</option>
+      <option value="prata">Prata</option>
+      <option value="ouro">Ouro</option>
+      <option value="safira">Safira</option>
+      <option value="rubi">Rubi</option>
+      <option value="esmeralda">Esmeralda</option>
       <option value="diamante">Diamante</option>
-      <option value="diamante_elite">Diamante Elite</option>
-      <option value="royal_diamond">Diamante Royal</option>
-      <option value="blue_diamond">Blue Diamond</option>
-      <option value="red_diamond">Red Diamond</option>
-      <option value="black_diamond">Black Diamond</option>
+      <option value="duplo_diamante">Duplo Diamante</option>
+      <option value="triplo_diamante">Triplo Diamante</option>
+      <option value="imperial_diamante">Imperial Diamante</option>
+      <option value="imperial_diamante_crown">Imperial Diamante Crown</option>
     </select>
 
-    <label>Nome:</label>
-    <input type="text" class="inputNome" (keyup)="nameChanged($event)" />
-    <span>*Para mover o nome, clique e arraste para a posição desejada.</span>
-    <br />
+        <label>Nome:</label>
+        <input type="text" class="inputNome" (keyup)="nameChanged($event)" />
+        <span>*Para mover o nome, clique e arraste para a posição desejada.</span>
+        <br />
 
-    <input #file type="file" accept='image/*' (change)="preview(file.files)" class="enviarButton"
-      (change)="preview(file.files)" id="uploadButton" />
+        <input #file type="file" accept='image/*' (change)="preview(file.files)" class="enviarButton" (change)="preview(file.files)" id="uploadButton" />
 
-    <label>Redimensionar imagem:</label>
-    <div class="controlButtons">
-      <button mat-button type="button" class="botoes" (click)='changeHImage(-5)'>
+        <label>Redimensionar imagem:</label>
+        <div class="controlButtons">
+            <button mat-button type="button" class="botoes" (click)='changeHImage(-5)'>
         <mat-icon>remove</mat-icon>
       </button>
-      <button mat-button type="button" class="botoes" (click)='changeWImage(+5)'>
+            <button mat-button type="button" class="botoes" (click)='changeWImage(+5)'>
         <mat-icon>add</mat-icon>
       </button>
 
-    </div>
+        </div>
 
-    <label class="moverLabel">Mover imagem:</label>
-    <div class="controlButtons">
-      <button mat-button type="button" class="botoes noDisplay" (click)='changeVPosition(-5)'>
+        <label class="moverLabel">Mover imagem:</label>
+        <div class="controlButtons">
+            <button mat-button type="button" class="botoes noDisplay" (click)='changeVPosition(-5)'>
         <mat-icon>keyboard_arrow_left</mat-icon>
       </button>
-      <button mat-button type="button" class="botoes" (click)='changeHPosition(-5)'>
+            <button mat-button type="button" class="botoes" (click)='changeHPosition(-5)'>
         <mat-icon>keyboard_arrow_up</mat-icon>
       </button>
-      <button mat-button type="button" class="botoes noDisplay">
+            <button mat-button type="button" class="botoes noDisplay">
         <mat-icon>keyboard_arrow_right</mat-icon>
       </button>
-    </div>
+        </div>
 
-    <div class="controlButtons2">
-      <button mat-button type="button" class="botoes" (click)='changeVPosition(-5)'>
+        <div class="controlButtons2">
+            <button mat-button type="button" class="botoes" (click)='changeVPosition(-5)'>
         <mat-icon>keyboard_arrow_left</mat-icon>
       </button>
-      <button mat-button type="button" class="botoes noDisplay" (click)='changeHPosition(+5)'>
+            <button mat-button type="button" class="botoes noDisplay" (click)='changeHPosition(+5)'>
         <mat-icon>keyboard_arrow_down</mat-icon>
       </button>
-      <button mat-button type="button" class="botoes" (click)='changeVPosition(+5)'>
+            <button mat-button type="button" class="botoes" (click)='changeVPosition(+5)'>
         <mat-icon>keyboard_arrow_right</mat-icon>
       </button>
-    </div>
-    <div class="controlButtons3">
-      <button mat-button type="button" class="botoes noDisplay" (click)='changeHPosition(-5)'>
+        </div>
+        <div class="controlButtons3">
+            <button mat-button type="button" class="botoes noDisplay" (click)='changeHPosition(-5)'>
         <mat-icon>keyboard_arrow_up</mat-icon>
       </button>
-      <button mat-button type="button" class="botoes" (click)='changeHPosition(+5)'>
+            <button mat-button type="button" class="botoes" (click)='changeHPosition(+5)'>
         <mat-icon>keyboard_arrow_down</mat-icon>
       </button>
-      <button mat-button type="button" class="botoes noDisplay" (click)='changeVPosition(+5)'>
+            <button mat-button type="button" class="botoes noDisplay" (click)='changeVPosition(+5)'>
         <mat-icon>keyboard_arrow_right</mat-icon>
       </button>
-    </div>
+        </div>
 
-    <br />
-  </form>
+        <br />
+    </form>
 </div>
 
 
 <div class="fab-container" #file (change)="preview(file.files) ">
-  <div class="fab fab-icon-holder" onclick="document.getElementById('uploadButton').click()">
-    <i class="fas fa-question">
+    <div class="fab fab-icon-holder" onclick="document.getElementById('uploadButton').click()">
+        <i class="fas fa-question">
       <mat-icon #file (change)="preview(file.files)">
         add_a_photo</mat-icon>
     </i>
-  </div>
+    </div>
 </div>

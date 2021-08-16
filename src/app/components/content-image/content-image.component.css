@@ -1,57 +1,59 @@
 /* V3 */
 
 .bannerImage {
-  position: absolute;
-  height: 420px;
-  width: 420px;
+    position: absolute;
+    height: 420px;
+    width: 420px;
 }
 
 .nameContent {
-  position: relative;
-  color: #000;
-  bottom: 85px;
-  left: 240px;
-  width: 200px;
-  height: 33px;
+    position: relative;
+    color: #000;
+    bottom: 62px;
+    left: 150px;
+    width: 200px;
+    height: 33px;
 }
 
 .nameContent h3 {
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-  cursor: move;
-  font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    cursor: move;
+    font-size: 20px;
 }
 
 .salvarButton {
-  width: 250px;
-  height: 2.5rem;
-  background: #28818a;
-  margin-bottom: 50px;
-  color: #000;
-  border: #2c343c;
+    width: 250px;
+    height: 2.5rem;
+    background: #5A3D98;
+    margin-bottom: 50px;
+    color: #000;
+    border: #2c343c;
 }
 
 .photoAdd {
-  background: #28818a;
-  position: absolute;
-  top: 100vh;
-  right: 0vw;
+    background: #5A3D98;
+    position: absolute;
+    top: 100vh;
+    right: 0vw;
 }
 
 .imageBg {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  z-index: -1;
+    position: absolute;
+    height: 260px;
+    width: 260px;
+    z-index: -1;
 }
 
 @media only screen and (max-width: 600px) {
-  .salvarButton {
-    margin-bottom: 150px;
-  }
+    .salvarButton {
+        margin-bottom: 150px;
+    }
 }
 
+
 /* V2 */
+
 
 /* .container {
   height: 420px;
@@ -92,7 +94,9 @@
   width: 420px;
 } */
 
+
 /* V1 */
+
 
 /* .content {
   position: absolute;
