@@ -4,8 +4,8 @@ import { GraduacoesComponent } from './components/graduacoes/graduacoes.componen
 import { VipComponent } from './components/vip/vip.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/graduacoes', pathMatch: 'full' },
-  { path: 'graduacoes', component: GraduacoesComponent },
+  // { path: '', redirectTo: '/graduacoes', pathMatch: 'full' },
+  { path: '', component: GraduacoesComponent },
   { path: 'vip', component: VipComponent },
 
 
